@@ -29,7 +29,7 @@
 
 ## 📸 Screenshots
 
-> *(Add screenshots here if you'd like)*
+![rice](screenshots/home/occhi/screenshots/1.png)
 
 ---
 📦 Dependencies
