@@ -36,9 +36,9 @@
 
 To use this setup properly, make sure to install:
 Core
-<pre> ```
+<pre>
 bspwm sxhkd alacritty rofi polybar dunst picom btop cava neofetch thefuck thunar pcmanfm
-``` </pre>
+</pre>
 Optional / Aesthetic
 
 feh        # Wallpaper setter
