@@ -49,10 +49,15 @@ zsh + oh-my-zsh (or your shell of choice)
 🚀 Installation
 
 # Clone the repository
+<pre>
 git clone https://github.com/yourusername/dotfiles-bspwm.git
+</pre>
 
 # Copy configs to your .config folder
+<pre>
 cp -r dotfiles-bspwm/.config/* ~/.config/
-
+</pre>
 # Copy wallpapers
+<pre>
 cp -r dotfiles-bspwm/Wallpapers ~/Pictures/Wallpapers
+</pre>
