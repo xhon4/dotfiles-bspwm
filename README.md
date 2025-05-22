@@ -32,23 +32,26 @@
 > *(Add screenshots here if you'd like)*
 
 ---
+📦 Dependencies
 
-## 📁 Structure
+To use this setup properly, make sure to install:
+Core
+<pre> ```
+bspwm sxhkd alacritty rofi polybar dunst picom btop cava neofetch thefuck thunar pcmanfm
+``` </pre>
+Optional / Aesthetic
 
-```bash
-.config/
-├── alacritty/    # Fast GPU terminal
-├── bspwm/        # Window manager configuration
-├── btop/         # System monitoring tool
-├── cava/         # Audio visualizer
-├── dunst/        # Notification daemon
-├── neofetch/     # System info
-├── nicotine/     # Soulseek client
-├── pcmanfm/      # Lightweight file manager
-├── picom/        # Compositor for transparency/shadows
-├── polybar/      # Status bar
-├── rofi/         # App launcher and power menu
-├── sxhkd/        # Hotkey daemon
-├── thefuck/      # Auto-corrects terminal commands
-├── Thunar/       # GUI file manager
-Wallpapers/       # Custom wallpapers
+feh        # Wallpaper setter
+ttf-jetbrains-mono-nerd  # Nerd Font for icons
+zsh + oh-my-zsh (or your shell of choice)
+
+🚀 Installation
+
+# Clone the repository
+git clone https://github.com/yourusername/dotfiles-bspwm.git
+
+# Copy configs to your .config folder
+cp -r dotfiles-bspwm/.config/* ~/.config/
+
+# Copy wallpapers
+cp -r dotfiles-bspwm/Wallpapers ~/Pictures/Wallpapers
