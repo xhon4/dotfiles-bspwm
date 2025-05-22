@@ -1,0 +1,52 @@
+#!/bin/bash
+
+### MONITOR SETTINGS ###
+xrandr --output HDMI-A-1 --mode 1920x1080 --rate 75
+
+### RULES ###
+bspc rule -a Steam state=floating
+bspc rule -a cs2 state=fullscreen
+
+# Floating apps
+bspc rule -a Rofi state=floating
+bspc rule -a Pavucontrol state=floating
+bspc rule -a feh state=floating   # corregido el espacio entre 'state' y '='
+
+### AUTOSTART PROGRAMS ###
+# Notification daemon
+pgrep -x dunst > /dev/null || dunst &
+
+# Hotkey daemon
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+# Spotify-in-tray
+
+# Start Polybar after tray manager
+polybar &
+
+# Compositor
+pgrep -x picom > /dev/null || picom --config ~/.config/picom/picom.conf &
+
+# Wallpaper
+feh --bg-fill ~/wallpapers/wpwc.png &
+feh --bg-color "#1E1E1E"  # esto puede ser innecesario si ya estás usando bg-fill
+
+# Workspaces
+bspc monitor -d I II III IV V VI VII VIII IX X
+
+### WINDOW SETTINGS ###
+bspc config border_width                 0
+bspc config top_padding                 40
+bspc config bottom_padding               0
+bspc config window_gap                  5
+bspc config split_ratio                 0.5
+bspc config borderless_monocle       true
+bspc config gapless_monocle          true
+bspc config focus_follows_pointer    true
+bspc config single_monocle          false
+
+
+### BORDER COLORS ###
+bspc config normal_border_color      "#FFFFFF"
+bspc config active_border_color      "#FFFFFF"
+bspc config focused_border_color     "#FFFFFF"

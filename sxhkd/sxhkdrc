@@ -1,0 +1,73 @@
+# === LAUNCHING APPS ===
+
+
+# Terminal
+super + Return
+    alacritty
+
+# Power menu (se repite el mismo binding que el terminal → corregido)
+super + BackSpace
+    ~/.config/bspwm/power_menu.sh
+
+# App launcher
+super + a
+    rofi -show drun
+
+
+# === WINDOW MANAGEMENT ===
+
+# Close focused window
+super + q
+    bspc node -c
+
+# fullscreen
+super + f
+    bspc desktop -l next  # Alterna entre los layouts (tiled/monocle)
+
+
+# Toggle floating
+super + shift + space
+    bspc node -t ~floating
+
+# Move focus
+super + {h,j,k,l}
+    bspc node -f {west,south,north,east}
+
+# Swap windows
+super + shift + {h,j,k,l}
+    bspc node -s {west,south,north,east}
+
+# Rotate window split layout
+super + i
+    bspc node @parent -R 90
+
+
+
+# === WORKSPACES ===
+
+# Switch to workspace 1-9
+super + {1-9}
+    bspc desktop -f ^{1-9}
+
+# Move focused window to workspace 1-9
+super + shift + {1-9}
+    bspc node -d ^{1-9}
+
+
+# === BSPWM REFRESH ===
+
+# Reload bspwm and sxhkd
+super + shift + r
+    pkill -USR1 -x bspwm
+    pkill -USR1 -x sxhkd
+
+
+# === SCREENSHOTS ===
+
+
+
+# === CUSTOM SCRIPTS ===
+
+# Toggle desktop visibility
+super + d
+    ~/.config/bspwm/toggle_desktop.sh

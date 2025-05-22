@@ -1,0 +1,110 @@
+* {
+    font: "JetBrainsMono Nerd Font 12, Terminus 10";
+
+    background:         #100f10;
+    foreground:         #9d9ea8;
+    selected-bg:        #1E3249;
+    selected-fg:        #9d9ea8;
+    border:             #100f10;
+    
+
+    text-color: @foreground;
+}
+
+/* Main window */
+window {
+    background-color: @background;
+    location: center;
+    width: 400px;
+    border: 0px;
+    border-color: @border;
+    border-radius: 0px;
+    padding: 10px;
+}
+
+/* Main content box */
+mainbox {
+    background-color: @background;
+    border: 0px;
+    padding: 0px;
+    spacing: 12px;
+}
+
+/* Input bar (if shown) */
+inputbar {
+    spacing: 0;
+    background-color: @background;
+    border: 1px;
+    border-color: @border;
+    border-radius: 0px;
+    padding: 5px;
+    children: [ prompt, entry ];
+}
+
+/* Prompt label */
+prompt {
+    padding: 5px;
+    background-color: @background;
+    text-color: @foreground;
+}
+
+/* Text entry field */
+entry {
+    background-color: @background;
+    text-color: @foreground;
+    padding: 5px;
+}
+
+message, textbox {
+    background-color: @background;
+    text-color: @selected-fg;
+    border: 1px;
+    border-color: @border;
+    padding: 5px;
+}
+
+
+/* List of menu options */
+listview {
+    spacing: 0px;
+    padding: 5px;
+    background-color: @background;
+    border: 1px;
+    border-color: @border;
+    lines: 5;
+    fixed-height: true;
+    dynamic: false;
+    scrollbar: false;
+}
+
+/* Each menu element */
+element {
+    padding: 10px;
+    background-color: @background;
+    text-color: @foreground;
+    border: 0px;
+}
+
+/* Selected menu element */
+element selected {
+    background-color: @selected-bg;
+    text-color: @selected-fg;
+    border: 1px;
+    border-color: @border;
+}
+
+/* Element text */
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+    padding: 0px;
+}
+
+/* Hide the left selection box (icon/marker) */
+element-icon {
+    padding: 0px;
+    background-color: transparent;
+    text-color: transparent;
+    size: 0px;
+    border: 0px;
+}

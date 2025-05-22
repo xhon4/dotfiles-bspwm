@@ -1,0 +1,39 @@
+[global]
+    # Fuente
+    font = Terminus 12
+
+    # Formato de la notificación: título (%s) y cuerpo (%b)
+    format = "%s\n%b"
+    alignment = center
+    vertical_alignment = center
+
+    # Tamaño y posición
+    width = 300
+    height = 80
+    offset = 10x10
+    origin = top-right
+
+    # Estilo
+    transparency = 0  # Sin transparencia, puro negro
+    frame_width = 1   # Borde fino, como en rofi
+    frame_color = "#FFFFFF"  # Blanco puro
+    background = "#000000"   # Negro puro
+    foreground = "#FFFFFF"   # Blanco puro
+    corner_radius = 0        # Bordes cuadrados
+    padding = 5
+    horizontal_padding = 5
+
+    # Tiempo que dura la notificación
+    timeout = 2
+
+    # Separador entre notificaciones
+    separator_height = 1
+    separator_color = "#FFFFFF"
+
+[volume]
+    summary = "Volumen"
+    appname = "volume"
+
+[brightness]
+    summary = "Brillo"
+    appname = "brightness"

@@ -1,0 +1,48 @@
+# Alacritty Configuration - Brutalist Style with Custom Palette
+
+# Font
+[font]
+  normal = { family = "Terminus", style = "Regular" }
+  size = 12.0
+
+# Colors
+[colors]
+
+[colors.primary]
+background = "#100f10"
+foreground = "#D6D6D6"
+
+[colors.cursor]
+text = "#0A0C10"
+cursor = "#9d9ea8"
+
+[colors.selection]
+text = "#0A0C10"
+background = "#AFB6BF"
+
+[colors.normal]
+black   = "#0A0C10"
+red     = "#562225"
+green   = "#6C8B7B"
+yellow  = "#B4B6A8" 
+blue    = "#5CA4E5" 
+magenta = "#816A8C"
+cyan    = "#2B4C57"         
+white   = "#D6D6D6"
+
+[colors.bright]
+black   = "#1A1C20"
+red     = "#F46C75"
+green   = "#8EBFA5"
+yellow  = "#E0E3DB"
+blue    = "#78B7F0"
+magenta = "#A78FB0"
+cyan    = "#89C6C8"
+white   = "#F8F8F2"
+
+# Window
+[window]
+  padding = { x = 10, y = 10 }
+  decorations = "none"
+  dynamic_title = true
+  opacity = 0.9
