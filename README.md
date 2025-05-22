@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  Minimal, aesthetic, and fast. This is my personal riced Arch Linux setup using <strong>BSPWM</strong> and other minimalist tools.
+  Minimal, aesthetic, and fast. This is my first rice <strong>BSPWM</strong>.
 </p>
 
 ---
